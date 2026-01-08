@@ -39,4 +39,4 @@ Our vision is to give every researcher their own AI scientist—one that learns 
 
 ---
 
-Ready to get started? [Explore our documentation](/docs/intro) or [try AgentLab](/docs/agentlab-quick-start/getting-started).
+Ready to get started? [Explore our documentation](/) or [try AgentLab](/agentlab-quick-start/getting-started).

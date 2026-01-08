@@ -71,4 +71,4 @@ If no existing agent matches your workflow, AgentLab allows you to create custom
 - Customize using your domain knowledge
 - Share with team members
 
-[Learn more about AgentLab →](/docs/agentlab-quick-start/getting-started)
+[Learn more about AgentLab →](/agentlab-quick-start/getting-started)
