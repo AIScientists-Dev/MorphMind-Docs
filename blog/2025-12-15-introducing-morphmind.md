@@ -15,7 +15,7 @@ New AI tools are everywhere, yet most researchers are still stuck with generic c
 
 ## What is MorphMind?
 
-MorphMind is the first platform where researchers can create no-code AI agents specialized for their exact work.
+MorphMind is the first AI-for-science platform designed for experts to create no-code AI agents specialized for their exact work.
 
 An AI agent is not just a chatbot that answers questions. It's an **AI research partner** that can plan tasks, co-design specialized tools, and carry out multi-step workflows toward a goal.
 
@@ -27,7 +27,7 @@ Instead of generic answers, you get an AI collaborator built for your science.
 
 ## Why We Built This
 
-In academic labs, building specialized AI agents typically takes a team several months. With MorphMind, any researcher—even without an engineering background—can create complex agents in under an hour, or simple ones in minutes.
+For most teams, building specialized AI agents typically takes several months. With MorphMind, any researcher—even without an engineering background—can create complex agents in under an hour, or simple ones in minutes.
 
 This isn't just about speed. It's about making ideas testable that were previously too expensive to explore.
 
