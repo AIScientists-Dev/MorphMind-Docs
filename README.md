@@ -1,41 +1,98 @@
-# Website
+# MorphMind Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the source code for **[doc.morphmind.ai](https://doc.morphmind.ai)** — MorphMind's official documentation site.
 
-## Installation
+## 📖 View the Live Site
+
+👉 **https://doc.morphmind.ai**
+
+---
+
+## ✏️ How to Edit Content (No Coding Required)
+
+### Option 1: Edit on GitHub (Easiest)
+
+1. Go to the file you want to edit in the `docs/` folder
+2. Click the **pencil icon** (Edit) in the top right
+3. Make your changes
+4. Click **"Commit changes"** at the bottom
+5. The site will automatically update in ~2 minutes
+
+### Option 2: Edit Locally
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed instructions.
+
+---
+
+## 📁 Where to Find Things
+
+| What | Where |
+|------|-------|
+| Documentation pages | `docs/` folder |
+| Blog posts | `blog/` folder |
+| Images | `docs/[section]/screenshots/` or `static/img/` |
+
+---
+
+## 🖼️ Adding Images
+
+1. Put your image in the `screenshots/` folder inside your doc section
+2. Reference it in your markdown:
+   ```markdown
+   ![Description](./screenshots/my-image.png)
+   ```
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on images and videos.
+
+---
+
+## 🛠️ For Developers
+
+<details>
+<summary>Click to expand technical setup instructions</summary>
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn
+
+### Install Dependencies
 
 ```bash
-yarn
+npm install
 ```
 
-## Local Development
+### Run Locally
 
 ```bash
-yarn start
+npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Opens http://localhost:3000 with live reload.
 
-## Build
+### Build for Production
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Deployment
 
-## Deployment
+The site auto-deploys to GitHub Pages when you push to `main` branch.
 
-Using SSH:
+</details>
 
-```bash
-USE_SSH=true yarn deploy
-```
+---
 
-Not using SSH:
+## 🤝 Contributing
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on:
+- Adding blog posts
+- Editing documentation
+- Adding images and videos
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
+
+## 📧 Questions?
+
+Contact the team or open an issue on GitHub.

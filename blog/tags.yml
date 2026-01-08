@@ -1,19 +1,22 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# Blog tags
+# Add tags as needed for your blog posts
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+ai-agents:
+  label: AI Agents
+  permalink: /ai-agents
+  description: Posts about AI agents
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+product:
+  label: Product
+  permalink: /product
+  description: Product updates and announcements
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+research:
+  label: Research
+  permalink: /research
+  description: Research and technical posts
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Tutorials and how-to guides
