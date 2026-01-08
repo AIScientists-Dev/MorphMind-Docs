@@ -2,46 +2,27 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to MorphMind Docs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the MorphMind documentation! Here you'll find everything you need to get started with AI agents and AgentLab.
 
-## Getting Started
+## Launch Video
 
-Get started by **creating a new site**.
+[Video embed to be added here]
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## What's Inside
 
-### What you'll need
+### 🤖 [AI Agent 101](./ai-agent-101/what-is-ai-agent)
+Learn the fundamentals of AI agents, their benefits, and find the right agent for your role.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### 🚀 [AgentLab Quick Start](./agentlab-quick-start/getting-started)
+Get up and running with AgentLab quickly with our step-by-step guide.
 
-## Generate a new site
+### ❓ [FAQ](./faq/common-questions)
+Find answers to common questions about AI agents and AgentLab.
 
-Generate a new Docusaurus site using the **classic template**.
+## Get Started
 
-The classic template will automatically be added to your project after you run the command:
+New to AI agents? Start with [AI Agent 101](./ai-agent-101/what-is-ai-agent) to learn the basics.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Ready to use AgentLab? Jump to [AgentLab Quick Start](./agentlab-quick-start/getting-started).

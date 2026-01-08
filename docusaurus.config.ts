@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'MorphMind Docs',
+  tagline: 'AI Agents Documentation',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -41,10 +41,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AIScientists-Dev/MorphMind-Docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -52,10 +50,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AIScientists-Dev/MorphMind-Docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -71,14 +67,20 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {name: 'keywords', content: 'AI agents, AgentLab, MorphMind, documentation'},
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      hideOnScroll: true,
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'MorphMind Logo',
+        src: 'img/logo.png',
+        srcDark: 'img/logo-light.png',
+        href: '/', // Links to docs homepage
+        target: '_self',
       },
       items: [
         {
@@ -88,57 +90,60 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'MorphMind Logo',
+        src: 'img/logo-light.png',
+        href: '/',
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'Contact Us',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              html: '245 Main Street, Cambridge, MA, 02142',
+            },
+            {
+              label: 'support@morphmind.ai',
+              href: 'mailto:support@morphmind.ai',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Follow Us',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/morphmind/',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/xxbCVbsd4E',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'X (Twitter)',
+              href: 'https://x.com/MorphMind__AI',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Legal',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Terms of Service',
+              href: 'https://morphmind.ai/terms-of-service',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Privacy Policy',
+              href: 'https://morphmind.ai/privacy-policy',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

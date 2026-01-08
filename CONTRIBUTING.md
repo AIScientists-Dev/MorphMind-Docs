@@ -68,9 +68,98 @@ Thank you for your interest in contributing to MorphMind documentation and blog!
 - **Content**: Posts should be relevant to MorphMind, AI, machine learning, or related topics
 - **Quality**: Well-written, proofread, and factually accurate
 - **Length**: No strict limit, but aim for meaningful content (typically 500+ words)
-- **Images**: Place images in a folder with your post (e.g., `blog/2026-01-15-post-name/image.png`)
 - **Formatting**: Use Markdown formatting, code blocks for code examples
 - **Truncate**: Use `<!-- truncate -->` to mark where the summary ends
+
+---
+
+## Adding Images and Videos
+
+### Where to Put Images
+
+**For documentation pages (`docs/`):**
+```
+docs/
+  your-section/
+    screenshots/           ← Create a folder for images
+      screenshot1.png
+      diagram.png
+    your-article.md
+```
+
+**For blog posts (`blog/`):**
+```
+blog/
+  2026-01-15-your-post/    ← Create a folder for the post
+    index.md               ← Your blog content
+    cover-image.png        ← Images go in same folder
+    screenshot.png
+```
+
+**For shared/global images (`static/img/`):**
+```
+static/
+  img/
+    logo.png               ← Shared images accessible site-wide
+    feature-diagram.png
+```
+
+### How to Reference Images in Markdown
+
+**Local images (relative path):**
+```markdown
+![Alt text](./screenshots/my-image.png)
+```
+
+**Global images (from static folder):**
+```markdown
+![Alt text](/img/my-image.png)
+```
+
+**With custom size (using HTML):**
+```html
+<img src="./screenshots/my-image.png" alt="Description" width="600" />
+```
+
+### Adding Videos
+
+**YouTube embed:**
+```html
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/VIDEO_ID" 
+  frameborder="0" 
+  allowfullscreen>
+</iframe>
+```
+
+**Loom embed:**
+```html
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
+  <iframe 
+    src="https://www.loom.com/embed/VIDEO_ID" 
+    frameborder="0" 
+    allowfullscreen 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
+  </iframe>
+</div>
+```
+
+**Direct video file (MP4):**
+```html
+<video width="100%" controls>
+  <source src="./demo-video.mp4" type="video/mp4" />
+</video>
+```
+
+### Image Best Practices
+
+- Use **PNG** for screenshots and diagrams
+- Use **JPG** for photos
+- Keep file sizes under **500KB** when possible (compress large images)
+- Use descriptive file names: `agentlab-dashboard.png` not `screenshot1.png`
+- Always include alt text for accessibility
 
 ### Review Process
 

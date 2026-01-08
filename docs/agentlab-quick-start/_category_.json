@@ -1,0 +1,10 @@
+{
+  "label": "AgentLab Quick Start",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "agentlab-quick-start/getting-started"
+  }
+}
