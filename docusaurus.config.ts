@@ -40,6 +40,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Docs as homepage
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/AIScientists-Dev/MorphMind-Docs/tree/main/',
