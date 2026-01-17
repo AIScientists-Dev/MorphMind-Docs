@@ -3,15 +3,19 @@ sidebar_position: 1
 slug: /
 ---
 
+import PromoBanner from '@site/src/components/PromoBanner';
+
 # Welcome to MorphMind
 
 MorphMind helps researchers, experts, and educators build AI partners that work like trusted teammates—not generic tools you have to fight with.
 
-**AgentLab**, our flagship product, lets you create your first AI agent in under a minute. Over 100 labs at leading universities—including Harvard, MIT, Stanford, and more—use AgentLab to turn their expertise into intelligent systems that actually understand their work.
+**AgentLab**, our flagship product, lets you create your first AI agent in under a minute. Over 100 labs at leading universities—including Harvard, MIT, Stanford, and more—use AgentLab to accelerate their research and scale their expertise.
 
-## Launch Video
+<PromoBanner />
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/9ftMzaCNHmE" title="MorphMind Launch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Video Intro
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/9ftMzaCNHmE" title="MorphMind Video Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What's Inside
 
