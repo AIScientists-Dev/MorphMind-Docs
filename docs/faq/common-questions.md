@@ -2,48 +2,47 @@
 sidebar_position: 1
 ---
 
-# Common Questions
+# General
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Find answers to the most frequently asked questions about AI agents and AgentLab.
+Common questions about MorphMind and AgentLab.
 
-## General Questions
+---
 
-**Q: What is an AI agent?**
+## What is Mutualistic AI?
 
-A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Mutualistic AI is a paradigm where humans and AI learn together through continuous interaction—combining human creativity and domain expertise with computational pattern recognition.
 
-**Q: How do AI agents differ from traditional automation?**
+---
 
-A: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Can I try AgentLab before committing?
 
-**Q: What are the main benefits of using AI agents?**
+Yes. Visit [AgentLab](https://agentlab.morphmind.ai) to get started for free. We also offer programs for students and researchers—see [Pricing](/faq/pricing) for details.
 
-A: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+---
 
-## AgentLab Questions
+## How do I get support?
 
-**Q: How do I get started with AgentLab?**
+- **Email:** [support@morphmind.ai](mailto:support@morphmind.ai)
+- **Feature requests & issues:** [Track in real time](https://jungle-fascinator-717.notion.site/2c2e0167610c800f88c6ca21aec485be?v=2c2e0167610c810ca617000c81b8f57b)
 
-A: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+We ship updates almost every day and respond to requests as they come in.
 
-**Q: What can I do with AgentLab?**
+---
 
-A: Ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+## Where can I learn more about the technology?
 
-**Q: Is AgentLab free to use?**
+Read our whitepaper:
 
-A: Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+**[MorphMind Whitepaper (PDF)](https://morphmind.ai/morphmind-whitepaper.pdf)**
 
-## Technical Questions
+---
 
-**Q: What are the system requirements?**
+## What browsers are supported?
 
-A: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+Chrome, Firefox, Safari, and Edge. We recommend keeping your browser up to date.
 
-**Q: How secure is AgentLab?**
+---
 
-A: Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+## Can I use AgentLab on mobile?
 
-**Q: Can I integrate AgentLab with other tools?**
-
-A: Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.
+Mobile and desktop apps are coming soon. For now, use AgentLab in your web browser.

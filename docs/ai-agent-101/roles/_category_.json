@@ -1,8 +1,7 @@
 {
-  "label": "Agents by Domain",
+  "label": "Example Agents",
   "position": 3,
-  "collapsible": true,
-  "collapsed": false,
+  "collapsible": false,
   "link": {
     "type": "doc",
     "id": "ai-agent-101/roles/overview"

@@ -80,7 +80,7 @@ const config: Config = {
         alt: 'MorphMind Logo',
         src: 'img/logo.png',
         srcDark: 'img/logo-light.png',
-        href: '/intro', // Links to docs homepage
+        href: '/', // Links to docs homepage
         target: '_self',
       },
       items: [
@@ -98,7 +98,7 @@ const config: Config = {
       logo: {
         alt: 'MorphMind Logo',
         src: 'img/logo-light.png',
-        href: '/intro',
+        href: '/',
       },
       links: [
         {

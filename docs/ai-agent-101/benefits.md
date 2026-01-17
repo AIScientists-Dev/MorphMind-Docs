@@ -2,82 +2,63 @@
 sidebar_position: 2
 ---
 
-# Capabilities of AI Agents
+# What Can AI Agents Do?
 
-This page describes the key capabilities that distinguish AI agents from traditional chatbots.
+AI agents go far beyond simple chat. Here's what makes them genuinely useful for real work.
 
-## Core Capabilities
+## Work With You Step-by-Step
 
-### Step-by-Step Collaboration
+AI agents support interactive workflows where you stay in control:
 
-AI agents support interactive workflows where users can:
+- **Watch progress in real time** — See each step as it happens
+- **Pause whenever you want** — Stop to review before moving on
+- **Change direction mid-stream** — Adjust the approach as you learn more
+- **Guide the process** — Steer the agent based on your expertise
 
-- **Monitor progress** — View each step as it executes
-- **Pause execution** — Stop at any point to review
-- **Modify decisions** — Adjust the agent's approach mid-workflow
-- **Guide direction** — Steer the process in real time
+You keep oversight while the agent handles the routine work.
 
-This allows users to maintain oversight while delegating routine tasks.
+## Show You Everything
 
-### Transparent Reasoning
+Each agent maintains a clear record of what it knows and how it thinks:
 
-Each agent maintains a knowledge base that shows:
-- Information sources the agent has access to
-- Decision logic for each step
-- Materials uploaded for training
+- **Source tracking** — See exactly where information comes from
+- **Decision logic** — Understand why the agent made each choice
+- **Asks, not guesses** — When something is unclear, a well-designed agent asks you rather than making something up
 
-**Traceability**: Outputs link back to their sources. Users can inspect the underlying logic and code for any step.
+## Remember Across Sessions
 
-**Clarification handling**: When information is ambiguous or missing, the agent requests clarification rather than making assumptions.
+Unlike chatbots that start fresh every time, agents can:
 
-### Persistent Memory
+- **Carry forward what they learn** — The agent's knowledge grows across sessions, so you don't re-explain the same background
+- **Learn your preferences over time** — The more you work together, the better it understands how you think
+- **Build understanding of your projects** — Context about your ongoing work stays with the agent
 
-Unlike session-based chatbots, agents can:
+## Create Real Deliverables
 
-- Retain context across multiple sessions
-- Learn user preferences over time
-- Build cumulative understanding of projects
-
-### Output Generation
-
-Agents can produce deliverables directly:
+Agents don't just chat—they produce actual outputs:
 
 - Figures and visualizations
 - Reports and summaries
-- Formatted exports
+- Formatted exports ready to use
 
-### Execution Modes
+## What an Agent Actually Is (in AgentLab)
 
-Users can choose their level of involvement:
+In AgentLab, an agent combines five key elements:
 
-| Mode | Description |
-|------|-------------|
-| **Auto-run** | Agent executes the full workflow; user reviews results |
-| **Manual** | User and agent collaborate on each step |
+1. **A goal or role** — What it's responsible for
+2. **Knowledge sources** — Papers, notes, project context, etc.
+3. **Tools and operators** — Actions it can take (analysis, computing, workflow steps)
+4. **A workflow** — Dynamic steps that adapt based on your feedback (go back, skip ahead, branch)
+5. **Memory** — How it improves with feedback and repeated use
 
-Manual mode is useful when domain expertise is needed at decision points.
+This is what makes AgentLab agents different from just using ChatGPT: they're built for human–AI co-reasoning in real research workflows.
 
-## Use Cases
+---
 
-### For Individual Users
+## Learn More
 
-- Reduce time on repetitive analysis tasks
-- Focus on interpretation rather than data processing
-- Work with specialized tools without coding
+For a deeper technical look at how MorphMind agents work, read our whitepaper:
 
-### For Teams and Organizations
+**[MorphMind Whitepaper (PDF)](https://morphmind.ai/morphmind-whitepaper.pdf)**
 
-- Capture institutional knowledge in reusable form
-- Standardize workflows across team members
-- Reduce onboarding time for new members
-
-## Comparison: AI Agents vs. Chatbots
-
-| Aspect | AI Agents | Traditional Chatbots |
-|--------|-----------|---------------------|
-| **Context** | Persistent across sessions | Resets each conversation |
-| **Transparency** | Traceable reasoning | Limited visibility |
-| **Uncertainty** | Requests clarification | May guess |
-| **Workflows** | Multi-step, long-running | Single-turn responses |
-| **Customization** | Domain-specific | General-purpose |
-| **Integration** | External tools and APIs | Limited |
+Covers our approach to agentic AI, workflow orchestration, transparency, and human-AI co-reasoning in research contexts.

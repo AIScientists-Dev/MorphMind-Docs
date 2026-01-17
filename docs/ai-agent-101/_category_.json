@@ -2,9 +2,5 @@
   "label": "AI Agent 101",
   "position": 2,
   "collapsible": true,
-  "collapsed": false,
-  "link": {
-    "type": "doc",
-    "id": "ai-agent-101/what-is-ai-agent"
-  }
+  "collapsed": false
 }
