@@ -8,134 +8,154 @@ Make your PDFs accessible to screen readers — in minutes, not hours.
 
 ---
 
-## The Problem
+## What It Does
 
-PDF accessibility compliance is a growing requirement for universities, publishers, and organizations. But manual remediation is painfully slow:
+This agent transforms inaccessible PDFs into WCAG 2.1 and PDF/UA compliant documents:
 
-- Adding alt-text to every image, chart, and equation
-- Tagging headings, paragraphs, and reading order
-- Validating against PDF/UA standards
-- Fixing issues and re-validating
-
-A single document can take **2-4 hours** to remediate manually.
+- **AI-generated alt-text** for images, charts, and math formulas
+- **Semantic structure** — headings, paragraphs, and reading order tagged automatically
+- **Accessibility score** — 0-100 score based on PDF/UA validation
+- **Supports PDF and LaTeX** input files
 
 ---
 
-## What This Agent Does
+## Getting Started
 
-The PDF Accessibility Remediator automates the entire process:
+### Option 1: Direct Link
 
-| Feature | Description |
-|---------|-------------|
-| **AI Alt-Text Generation** | Uses vision AI to describe images, charts, and math formulas |
-| **Semantic Structure** | Automatically tags headings, paragraphs, and reading order |
-| **PDF/UA Validation** | Checks compliance and returns a 0-100 accessibility score |
-| **PDF & LaTeX Support** | Works with compiled PDFs or LaTeX source files |
+[**Open PDF Accessibility Remediator →**](https://agentlab.morphmind.ai/shared/rUi2QWWK5rN23Cq)
 
----
+<img src={require('./pdf-accessibility-remediator-screenshots/follow-share-link.png').default} alt="Agent detail page with Try It Now button" style={{maxWidth: '700px', width: '100%'}} />
 
-## Who It's For
+### Option 2: Find in Marketplace
 
-- **Academic staff** — course materials, lecture slides, syllabi
-- **Researchers** — papers and preprints for accessible journals
-- **Disability services** — bulk remediation of institutional documents
-- **Publishers** — compliance for digital publications
+Go to [AgentLab](https://agentlab.morphmind.ai) → **Agent Templates** → Search "PDF"
+
+<img src={require('./pdf-accessibility-remediator-screenshots/find-in-marketplace.png').default} alt="Searching for PDF in AgentLab Marketplace" style={{maxWidth: '700px', width: '100%'}} />
 
 ---
 
-## How to Use It
+## Method 1: Upload PDF Directly
 
-### Step 1: Open the Agent
+The simplest approach — upload your PDF and get an accessible version back.
 
-Navigate to [AgentLab](https://agentlab.morphmind.ai) and find the **PDF Accessibility Remediator** agent.
+### Step 1: Attach your PDF and send a prompt
 
-<img src={require('./screenshots/agent-card.png').default} alt="PDF Accessibility Remediator agent card" style={{maxWidth: '600px', width: '100%'}} />
+<img src={require('./pdf-accessibility-remediator-screenshots/attach-pdf-in-chat.png').default} alt="Attaching PDF in chat with prompt" style={{maxWidth: '600px', width: '100%'}} />
+
+**Copy this prompt:**
+
+```
+Make this PDF accessible with WCAG 2.1 compliance
+```
+
+### Step 2: Review the remediation report
+
+The agent analyzes your document, applies fixes, and returns a detailed report showing:
+- Initial vs. final accessibility score
+- Compliance grade improvement
+- Fixes applied by category
+
+<img src={require('./pdf-accessibility-remediator-screenshots/final-report.png').default} alt="PDF Accessibility Remediation Report showing score improvement" style={{maxWidth: '700px', width: '100%'}} />
+
+### Step 3: Download your accessible PDF
+
+The agent provides a download link for your remediated PDF with all accessibility tags applied.
 
 ---
 
-### Step 2: Upload Your Document
+## Method 2: Edit LaTeX in Overleaf
 
-Upload a PDF file or LaTeX source. The agent accepts:
-- PDF files (original, not scanned images)
-- LaTeX `.tex` files with associated figures
+For LaTeX users, the agent can connect directly to your Overleaf project, make improvements, and push the accessible version back.
 
-<img src={require('./screenshots/upload.png').default} alt="Upload interface" style={{maxWidth: '600px', width: '100%'}} />
+### Step 1: Get your Overleaf Git URL
 
----
+In your Overleaf project, click the **Integrations** icon in the left sidebar, then select **Git**.
 
-### Step 3: Describe Your Document (Optional)
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-git-authentication-token-step2.png').default} alt="Overleaf Integrations panel showing Git option" style={{maxWidth: '400px', width: '100%'}} />
 
-For better alt-text quality, tell the agent what type of document it is:
-- "academic paper"
-- "lecture slides"
-- "technical report"
-- "administrative document"
+Copy the Git clone URL from the popup.
 
----
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-git-authentication-token-step3.png').default} alt="Clone with Git popup showing git URL" style={{maxWidth: '600px', width: '100%'}} />
 
-### Step 4: Review Results
+### Step 2: Get your Git authentication token
+
+Go to [overleaf.com/user/settings](https://www.overleaf.com/user/settings) and scroll to **Git integration**. Create or copy your token.
+
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-access-token.png').default} alt="Overleaf settings page showing Git authentication tokens" style={{maxWidth: '600px', width: '100%'}} />
+
+### Step 3: Connect to your Overleaf project
+
+**Copy this prompt** (replace with your URL and token):
+
+```
+Connect to my Overleaf project.
+Git URL: https://git@git.overleaf.com/[PROJECT_ID]
+Token: [YOUR_TOKEN]
+```
+
+The agent will connect, list your files, and ask which one to improve.
+
+### Step 4: Request accessibility improvements
+
+Once connected, tell the agent which file to make accessible.
+
+**Copy this prompt** (replace with your filename):
+
+```
+Make main.tex accessible and create main-accessible.tex in my Overleaf project
+```
 
 The agent will:
-1. Analyze your document structure
-2. Generate alt-text for all figures and formulas
-3. Add semantic tags (headings, paragraphs)
-4. Validate against PDF/UA standard
-5. Return an **accessibility score (0-100)**
+1. Add accessibility preamble for PDF/UA compliance
+2. Generate alt-text for all figures
+3. Create a new file with `-accessible` suffix
+4. Push it back to your Overleaf project
 
-<img src={require('./screenshots/results.png').default} alt="Accessibility score results" style={{maxWidth: '600px', width: '100%'}} />
+### Step 5: Switch compiler to LuaLaTeX
 
----
+**Important:** The accessibility preamble requires LuaLaTeX. In Overleaf, click the **Settings** icon (gear) in the left sidebar.
 
-### Step 5: Download Your Accessible PDF
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-set-lualatex-step1.png').default} alt="Overleaf Settings icon in sidebar" style={{maxWidth: '300px', width: '100%'}} />
 
-Download the remediated PDF. It will include:
-- Proper document structure tags
-- Alt-text on all images and figures
-- Reading order for screen readers
-- PDF/UA metadata
+Then go to **Compiler** and select **LuaLaTeX** from the dropdown.
 
-<img src={require('./screenshots/download.png').default} alt="Download accessible PDF" style={{maxWidth: '600px', width: '100%'}} />
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-set-lualatex-step2.png').default} alt="Overleaf Settings showing Compiler dropdown with LuaLaTeX selected" style={{maxWidth: '600px', width: '100%'}} />
+
+Recompile your project to generate the accessible PDF.
 
 ---
 
-## Tips for Best Results
+## Quick Reference: Example Prompts
 
-1. **Use original PDFs** — Scanned images won't have extractable text
-2. **Specify document type** — Helps the AI generate more accurate alt-text
-3. **For LaTeX** — Include figure files in the same upload or directory
-4. **Review critical figures** — AI-generated alt-text is good but may need refinement for complex diagrams
+| Scenario | Prompt to Copy |
+|----------|----------------|
+| **Upload PDF** | `Make this PDF accessible with WCAG 2.1 compliance` |
+| **Connect Overleaf** | `Connect to my Overleaf project. Git URL: https://git@git.overleaf.com/[PROJECT_ID] Token: [YOUR_TOKEN]` |
+| **Improve LaTeX file** | `Make main.tex accessible and create main-accessible.tex in my Overleaf project` |
 
 ---
 
-## Example Conversation
+## Before & After
 
-> **You:** I have a research paper PDF that needs to be accessible for journal submission. Can you help?
->
-> **Agent:** I'll analyze your PDF and make it accessible. Please upload the file.
->
-> **You:** [uploads paper.pdf]
->
-> **Agent:** I've processed your document. Here are the results:
-> - **Accessibility Score: 87/100 (Grade: B+)**
-> - 12 figures found — alt-text generated for all
-> - 3 mathematical formulas described
-> - Document structure tagged (H1, H2, paragraphs)
-> - 2 links fixed with alt-text
->
-> Download your accessible PDF here: [paper_accessible.pdf]
+### Before: Generic Figure Tags
+
+The original PDF has no semantic structure — just generic `<Figure>` tags that screen readers cannot interpret.
+
+<img src={require('./pdf-accessibility-remediator-screenshots/example-original-file.png').default} alt="Original PDF showing generic Figure tags in accessibility panel" style={{maxWidth: '700px', width: '100%'}} />
+
+### After: Proper Semantic Tags
+
+After remediation: `<H1>` for headings, `<P>` for paragraphs, `<Formula>` for math — all with alt-text.
+
+<img src={require('./pdf-accessibility-remediator-screenshots/example-fixed-file.png').default} alt="Remediated PDF showing H1, P, and Formula tags with proper structure" style={{maxWidth: '700px', width: '100%'}} />
 
 ---
 
 ## Open Source
 
-This agent is powered by an open-source tool. Self-host it or contribute:
+Self-host or contribute to the underlying tool:
 
-[GitHub: AI-Powered-PDF-Accessibility](https://github.com/AIScientists-Dev/AI-Powered-PDF-Accessibility)
+<img src={require('./pdf-accessibility-remediator-screenshots/github-opensource-code-for-self-hosting.png').default} alt="GitHub repository for AI-Powered PDF Accessibility" style={{maxWidth: '600px', width: '100%'}} />
 
----
-
-## Try It Now
-
-Ready to make your PDFs accessible?
-
-[**Open PDF Accessibility Remediator →**](https://agentlab.morphmind.ai)
+[**GitHub: AI-Powered-PDF-Accessibility →**](https://github.com/AIScientists-Dev/AI-Powered-PDF-Accessibility)
