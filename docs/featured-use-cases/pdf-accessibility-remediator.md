@@ -72,7 +72,7 @@ For LaTeX users, the agent can connect directly to your Overleaf project, make i
 
 In your Overleaf project, click the **Integrations** icon in the left sidebar, then select **Git**.
 
-<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-git-authentication-token-step2.png').default} alt="Overleaf Integrations panel showing Git option" style={{maxWidth: '400px', width: '100%'}} />
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-git-authentication-token-step2.png').default} alt="Overleaf Integrations panel showing Git option" style={{maxWidth: '280px', width: '100%'}} />
 
 Copy the Git clone URL from the popup.
 
@@ -116,7 +116,7 @@ The agent will:
 
 **Important:** The accessibility preamble requires LuaLaTeX. In Overleaf, click the **Settings** icon (gear) in the left sidebar.
 
-<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-set-lualatex-step1.png').default} alt="Overleaf Settings icon in sidebar" style={{maxWidth: '300px', width: '100%'}} />
+<img src={require('./pdf-accessibility-remediator-screenshots/overleaf-set-lualatex-step1.png').default} alt="Overleaf Settings icon in sidebar" style={{maxWidth: '450px', width: '100%'}} />
 
 Then go to **Compiler** and select **LuaLaTeX** from the dropdown.
 
