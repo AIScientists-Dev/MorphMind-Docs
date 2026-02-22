@@ -83,7 +83,26 @@ const config: Config = {
         href: '/', // Links to docs homepage
         target: '_self',
       },
-      items: [],
+      items: [
+        {
+          href: 'https://x.com/MorphMind__AI',
+          position: 'right',
+          className: 'navbar-icon navbar-x-icon',
+          'aria-label': 'X (Twitter)',
+        },
+        {
+          href: 'https://www.linkedin.com/company/morphmind/',
+          position: 'right',
+          className: 'navbar-icon navbar-linkedin-icon',
+          'aria-label': 'LinkedIn',
+        },
+        {
+          href: 'https://discord.gg/xxbCVbsd4E',
+          position: 'right',
+          className: 'navbar-icon navbar-discord-icon',
+          'aria-label': 'Discord',
+        },
+      ],
     },
     footer: {
       style: 'dark',
