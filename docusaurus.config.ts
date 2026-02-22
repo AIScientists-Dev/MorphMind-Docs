@@ -83,15 +83,7 @@ const config: Config = {
         href: '/', // Links to docs homepage
         target: '_self',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-      ],
+      items: [],
     },
     footer: {
       style: 'dark',
